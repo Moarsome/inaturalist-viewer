@@ -116,7 +116,6 @@ function shuffleArray(array:Array<any>) {
                     preload(photo["small_url"], { as: "image" });
                 }
 
-
                 const geom = e.features[0].geometry as Point
                 const coordinates = geom.coordinates;
       

@@ -18,7 +18,7 @@ function generateRandomTaxons(observationTaxonName:string): string[] {
   while (randomTaxons.length < maxGeneration) {
     const newTaxon = formatTaxonName(taxonNames[Math.floor(Math.random()*taxonNames.length)])
 
-    if (!randomTaxons.includes(newTaxon) && !randomTaxons.includes(observationTaxonName))
+    if (!randomTaxons.includes(newTaxon) && newTaxon !== observationTaxonName)
       randomTaxons.push(newTaxon)
   }
 
@@ -37,7 +37,7 @@ export async function getObservationData() : Promise<FeatureCollection<Geometry,
   }
 
   try {
-    await fetch("https://inaturalist.nz/observations/kylie21571.json")
+    await fetch("https://inaturalist.nz/observations.json?iconic_taxa[]=Fungi&on=2025&per_page=200&photo_license=none&license=none&quality_grade=research")
     .then(response => response.json())
     .then(data => {
       const features = data.map((obs:any) => ({
