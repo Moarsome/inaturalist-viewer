@@ -8,7 +8,7 @@ import { useState } from 'react'
 import sampleData from './components/observationData.json'
 
 export default function App() {
-  const [currentMap, setCurrentMap] = useState<MapRef|null>(null)
+  const [, setCurrentMap] = useState<MapRef|null>(null)
 
   const handleComponentALoaded = (currentMap:MapRef) => {
     setCurrentMap(currentMap)

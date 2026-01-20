@@ -1,10 +1,11 @@
 import type { FeatureCollection, Point } from "geojson";
-import { type CircleLayerSpecification, type FilterSpecification } from "maplibre-gl";
+import { type CircleLayerSpecification } from "maplibre-gl";
 import { Source, Layer, type MapRef, useMap, Popup, type PopupProps} from "@vis.gl/react-maplibre";
 import { getObservationData } from '../lib/api'
 import { useEffect, useState } from "react";
 import sampleData from './observationData.json'
 import { Button, FormControl, FormControlLabel, FormLabel, Radio, RadioGroup, Typography } from "@mui/material";
+import { preload } from "react-dom";
 
 
 type AddLayerProps = {
@@ -12,8 +13,6 @@ type AddLayerProps = {
 };
 
 function shuffleArray(array:Array<any>) {
-    console.log("Shuffling array:", array);
-
   let currentIndex = array.length;
 
   while (currentIndex != 0) {
@@ -70,14 +69,14 @@ function shuffleArray(array:Array<any>) {
      const map = useMap()
 
     const defaultGeojson:FeatureCollection= {
-     type: 'FeatureCollection',
+        type: 'FeatureCollection',
         features: [
             {
             type: 'Feature', geometry: { type: 'Point', coordinates: [parseFloat(sampleData["longitude"]),parseFloat(sampleData["latitude"])] },
             properties: null
-        }
-      ]
-  }
+            }
+        ]
+    }
 
     const [loadedGeoJSON, setLoadedGeoJSON] = useState<FeatureCollection>(defaultGeojson)
 
@@ -85,7 +84,9 @@ function shuffleArray(array:Array<any>) {
         const fetchData = async () => {
             const data = await getObservationData();
             console.log("Fetched GeoJSON data:", data);
+
             if (!data) return;
+
             setLoadedGeoJSON(data);
             if (map.current) props.onLoad(map.current);
         };
@@ -107,7 +108,14 @@ function shuffleArray(array:Array<any>) {
                 setCurrentImageArray(JSON.parse(e.features[0].properties["photos"]))
                 setCurrentImageIndex(0)
                 setMessage("")
-                
+
+                preload(e.features[0].properties["previewImage"], { as: "image" });
+                const photoArray = JSON.parse(e.features[0].properties["photos"])
+
+                for (const photo of photoArray) {
+                    preload(photo["small_url"], { as: "image" });
+                }
+
 
                 const geom = e.features[0].geometry as Point
                 const coordinates = geom.coordinates;
@@ -145,7 +153,7 @@ function shuffleArray(array:Array<any>) {
             }
         });
 
-        map.current.on('mouseleave', 'point', (e) => {
+        map.current.on('mouseleave', 'point', () => {
             setHoverPopupProperties(null)
         });
     }
