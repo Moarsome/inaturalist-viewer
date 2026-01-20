@@ -1,0 +1,296 @@
+[
+    {
+        "id": 446986,
+        "name": "Yarrumia coronata",
+        "rank": "species",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48712/48713/446984",
+        "common_name": null
+    },
+    {
+        "id": 67747,
+        "name": "Usnea",
+        "rank": "genus",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48327/54321/1094690",
+        "common_name": {
+            "id": 285756,
+            "name": "beard lichens",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 352247,
+        "name": "Fomitiporia",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/57519/57518",
+        "common_name": null
+    },
+    {
+        "id": 54026,
+        "name": "Psilocybe",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517/416512",
+        "common_name": {
+            "id": 2867511,
+            "name": "Psilocybe Mushrooms",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 83198,
+        "name": "Gymnopilus",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517/416512",
+        "common_name": {
+            "id": 777055,
+            "name": "rustgills and gyms",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 117867,
+        "name": "Parmotrema",
+        "rank": "genus",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48327/54321/1094690",
+        "common_name": {
+            "id": 953821,
+            "name": "Ruffle Lichens",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 53281,
+        "name": "Leratiomyces erythrocephalus",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517/48768/53282",
+        "common_name": {
+            "id": 802060,
+            "name": "Scarlet Pouch",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 48475,
+        "name": "Ganoderma",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/47380/47379",
+        "common_name": {
+            "id": 1047951,
+            "name": "Artist's Brackets, Reishi, and Allies",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 381276,
+        "name": "Armillaria novae-zelandiae",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785516/55931/55930",
+        "common_name": {
+            "id": 2096009,
+            "name": "Austral Honey Mushroom",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 55922,
+        "name": "Mycena",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785516/55920",
+        "common_name": {
+            "id": 792729,
+            "name": "Bonnets",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 154736,
+        "name": "Galerina patagonica",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517/416512/118297",
+        "common_name": null
+    },
+    {
+        "id": 118297,
+        "name": "Galerina",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517/416512",
+        "common_name": {
+            "id": 2274393,
+            "name": "Moss Bells",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 1367786,
+        "name": "Favolaschia claudopus",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785516/55920/83577/1483834/1367787",
+        "common_name": {
+            "id": 2938405,
+            "name": "orange pore fungus",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 55930,
+        "name": "Armillaria",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785516/55931",
+        "common_name": {
+            "id": 104445,
+            "name": "honey mushrooms",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 915054,
+        "name": "Pulchrocladia retipora",
+        "rank": "species",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48327/49489/915053",
+        "common_name": {
+            "id": 2661552,
+            "name": "Coral lichen",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 48705,
+        "name": "Cortinariaceae",
+        "rank": "family",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785517",
+        "common_name": null
+    },
+    {
+        "id": 318589,
+        "name": "Stereocaulon ramulosum",
+        "rank": "species",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48327/122661/122660",
+        "common_name": null
+    },
+    {
+        "id": 475082,
+        "name": "Psoroma paleaceum",
+        "rank": "species",
+        "ancestry": "48460/47170/48250/372740/54743/952186/48712/69220/175383",
+        "common_name": null
+    },
+    {
+        "id": 525059,
+        "name": "Fusicolla merismoides",
+        "rank": "species",
+        "ancestry": "48460/47170/48250/372740/53539/794115/48248/118017/496778",
+        "common_name": {
+            "id": 2990846,
+            "name": "deer vomit",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 179230,
+        "name": "Auricularia cornea",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/50815/50816/50817/1529948",
+        "common_name": {
+            "id": 744588,
+            "name": "Ear fungus",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 48701,
+        "name": "Boletus edulis",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/48427/48702/1135850/48703",
+        "common_name": {
+            "id": 86157,
+            "name": "King Bolete",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 350046,
+        "name": "Amanita junquillea",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785522/118249/1149497/48419/1142599/954920/1144758",
+        "common_name": {
+            "id": 2317359,
+            "name": "jewelled amanita",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 62475,
+        "name": "Rhizopogon",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/48427/1432580/62476",
+        "common_name": {
+            "id": 3397832,
+            "name": "Bearded Truffle",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 179065,
+        "name": "Suillus granulatus",
+        "rank": "species",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/48427/1432580/53489/53490/1634721/1634723",
+        "common_name": {
+            "id": 298886,
+            "name": "Dotted-stalked Suillus",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 48419,
+        "name": "Amanita",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/785522/118249/1149497",
+        "common_name": {
+            "id": 1099585,
+            "name": "amanita mushrooms",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 47167,
+        "name": "Agaricales",
+        "rank": "order",
+        "ancestry": "48460/47170/47169/492000/50814/1094814",
+        "common_name": {
+            "id": 229253,
+            "name": "Common Gilled Mushrooms and Allies",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    },
+    {
+        "id": 47165,
+        "name": "Entoloma",
+        "rank": "genus",
+        "ancestry": "48460/47170/47169/492000/50814/1094814/47167/787526/47166",
+        "common_name": {
+            "id": 777002,
+            "name": "Pinkgills",
+            "is_valid": true,
+            "lexicon": "English"
+        }
+    }
+]

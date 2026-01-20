@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "infrastructure-improvements-map": {
+      "appLocation": ".",
+      "outputLocation": "dist",
+      "appBuildCommand": "pnpm build",
+      "run": "pnpm dev",
+      "appDevserverUrl": "http://localhost:5173"
+    }
+  }
+}
