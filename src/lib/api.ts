@@ -11,6 +11,20 @@ function formatTaxonName(taxon:any): string {
     return taxon.name + (taxon.common_name ? ` (${taxon.common_name.name})` : "");
 }
 
+function generateRandomTaxons(observationTaxonName:string): string[] {
+  const randomTaxons: string[] = []
+  const maxGeneration = 3
+
+  while (randomTaxons.length < maxGeneration) {
+    const newTaxon = formatTaxonName(taxonNames[Math.floor(Math.random()*taxonNames.length)])
+
+    if (!randomTaxons.includes(newTaxon) && !randomTaxons.includes(observationTaxonName))
+      randomTaxons.push(newTaxon)
+  }
+
+  return randomTaxons
+}
+
 export async function getObservationData() : Promise<FeatureCollection<Geometry, GeoJsonProperties>>{
   let featureCollection = {
      type: 'FeatureCollection',
@@ -34,11 +48,9 @@ export async function getObservationData() : Promise<FeatureCollection<Geometry,
         },
         properties: {
           formattedTaxonName: formatTaxonName(obs.taxon),
-          randomTaxons: [
-            formatTaxonName(taxonNames[Math.floor(Math.random()*taxonNames.length)]),
-            formatTaxonName(taxonNames[Math.floor(Math.random()*taxonNames.length)]),
-            formatTaxonName(taxonNames[Math.floor(Math.random()*taxonNames.length)])
-          ],  
+          randomTaxons: 
+            generateRandomTaxons(formatTaxonName(obs.taxon))
+          ,  
           previewImage: obs.photos.length > 0 ? obs.photos[0].square_url : null,
           ...obs
         }
